@@ -14,16 +14,11 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity Register is
- port( A1   	: in unsigned(2 downto 0);     -- Seleção de quais registradores serão lidos
-	    A2    	: in unsigned(2 downto 0);     -- Seleção de quais registradores serão lidos
-	    WD3   	: in unsigned(15  downto 0);   -- Barramento de dados para escrita
-	    A3    	: in unsigned(2 downto 0);     -- Seleção de qual registrador será escrito
-	    WE3   	: in std_logic;                -- Write enable (habilita a escrita no momento correto)
-       CLK     : in std_logic;                -- Clock
-       rst     : in std_logic;                -- Reset
-
-       RD1     : out unsigned(15  downto 0); -- Dados dos registradores lidos
-       RD2     : out unsigned(15  downto 0)  -- Dados dos registradores lidos
+ port( in   	    : in  unsigned(15 downto 0); -- Entrada de Dados
+	   out    	    : out unsigned(15 downto 0); -- Saída de Dados
+	   clk   	    : in  std_logic;   			 -- Condicao
+	   rst			: in  std_logic;			 -- Flag
+	   wr_en	    : in  std_logic				 -- 
 	  );
 end entity;
 
