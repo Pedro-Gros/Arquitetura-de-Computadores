@@ -14,13 +14,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity Register is
- port( in   	    : in  unsigned(15 downto 0); -- Entrada de Dados
+ port( in			: in  unsigned(15 downto 0); -- Entrada de Dados
 	   out    	    : out unsigned(15 downto 0); -- Saída de Dados
 	   clk   	    : in  std_logic;   			 -- Condicao
 	   rst			: in  std_logic;			 -- Flag
 	   wr_en	    : in  std_logic				 -- Write enable
 	  );
-end entity;
+end entity Register;
 
 
 architecture a_Register of Register is
