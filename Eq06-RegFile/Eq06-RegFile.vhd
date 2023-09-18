@@ -43,25 +43,25 @@ architecture a_RegistersBank of RegistersBank is
 	-- Sinais de saida dos registradores
 	signal out_0, out_1, out_2, out_3, out_4, out_5, out_6, out_7	: unsigned(15 downto 0);
 	-- Sinais de enable para cada registrador
-	signal s_WD3_0, s_WD3_1, s_WD3_2, s_WD3_3, s_WD3_4, s_WD3_5, s_WD3_6, s_WD3_7 : std_logic := '0';
+	signal s_WE3_0, s_WE3_1, s_WE3_2, s_WE3_3, s_WE3_4, s_WE3_5, s_WE3_6, s_WE3_7 : std_logic := '0';
 
 	begin
 		-- Instanciando registrador 0
-		rg0: register_comp port map(WD3, out_0, CLK, rst, s_WD3_0);
+		rg0: register_comp port map(WD3, out_0, CLK, rst, s_WE3_0);
 		-- Instanciando registrador 1
-		rg1: register_comp port map(WD3, out_1, CLK, rst, s_WD3_1);
+		rg1: register_comp port map(WD3, out_1, CLK, rst, s_WE3_1);
 		-- Instanciando registrador 2
-		rg2: register_comp port map(WD3, out_2, CLK, rst, s_WD3_2);
+		rg2: register_comp port map(WD3, out_2, CLK, rst, s_WE3_2);
 		-- Instanciando registrador 3
-		rg3: register_comp port map(WD3, out_3, CLK, rst, s_WD3_3);
+		rg3: register_comp port map(WD3, out_3, CLK, rst, s_WE3_3);
 		-- Instanciando registrador 4
-		rg4: register_comp port map(WD3, out_4, CLK, rst, s_WD3_4);
+		rg4: register_comp port map(WD3, out_4, CLK, rst, s_WE3_4);
 		-- Instanciando registrador 5
-		rg5: register_comp port map(WD3, out_5, CLK, rst, s_WD3_5);
+		rg5: register_comp port map(WD3, out_5, CLK, rst, s_WE3_5);
 		-- Instanciando registrador 6
-		rg6: register_comp port map(WD3, out_6, CLK, rst, s_WD3_6);
+		rg6: register_comp port map(WD3, out_6, CLK, rst, s_WE3_6);
 		-- Instanciando registrador 7
-		rg7: register_comp port map(WD3, out_7, CLK, rst, s_WD3_7);
+		rg7: register_comp port map(WD3, out_7, CLK, rst, s_WE3_7);
 
 		-- Saida 1 recebe o valor do registrador selecionado por A1
 		RD1 <= 	out_1 when A1 = "001" else
@@ -83,12 +83,13 @@ architecture a_RegistersBank of RegistersBank is
 				out_7 when A2 = "111" else
 				"0000000000000000";
 
-		s_WD3_1 <= '1' when A3 = "001" and WD3 = '1';
-		s_WD3_2 <= '1' when A3 = "010" and WD3 = '1';
-		s_WD3_3 <= '1' when A3 = "011" and WD3 = '1';
-		s_WD3_4 <= '1' when A3 = "100" and WD3 = '1';
-		s_WD3_5 <= '1' when A3 = "101" and WD3 = '1';
-		s_WD3_6 <= '1' when A3 = "110" and WD3 = '1';
-		s_WD3_7 <= '1' when A3 = "111" and WD3 = '1';
+		s_WE3_1 <= '1' when A3 = "001" and WE3 = '1' else '0';
+		s_WE3_2 <= '1' when A3 = "010" and WE3 = '1' else '0';
+		s_WE3_3 <= '1' when A3 = "011" and WE3 = '1' else '0';
+		s_WE3_4 <= '1' when A3 = "100" and WE3 = '1' else '0';
+		s_WE3_5 <= '1' when A3 = "101" and WE3 = '1' else '0';
+		s_WE3_6 <= '1' when A3 = "110" and WE3 = '1' else '0';
+		s_WE3_7 <= '1' when A3 = "111" and WE3 = '1' else '0';
+		
 
 end architecture;
