@@ -39,7 +39,39 @@ architecture a_Reg_tb of Reg_tb is
     uut: RegistersBank port map(s_A1, s_A2, s_WD3, s_A3, s_WE3, s_CLK, s_rst, s_RD1, s_RD2);
     process
         begin
-            ---FAZER O TESTE AQUI
+			s_clk   <= '0';
+			wait for 50 ns;
+			s_clk   <= '1';
+			wait for 50 ns;
+	end process;
+	
+	process
+		begin			
+			s_rst <= '1'; -- Ativa o reset
+			wait for 100 ns;
+			s_rst <= '0'; -- Desativa o reset
+			wait for 100 ns;
+
+			s_A3 <= "001"; 			   -- Seleciona o registrador 1
+			s_WD3 <= "1001011100010111"; -- Valor a ser escrito
+			s_WE3 <= '1'; 			   -- Ativa a escrita
+			wait for 100 ns;
+
+			s_A3 <= "010"; 			   -- Seleciona o registrador 2
+			s_WD3 <= "0010001011110100"; -- Valor a ser escrito
+			s_WE3 <= '1'; 			   -- Ativa a escrita
+			wait for 100 ns;
+
+			s_A1 <= "001"; 			   -- Seleciona o registrador 1
+			s_A2 <= "010"; 			   -- Seleciona o registrador 2
+			wait for 100 ns;
+			
+			s_rst <= '1'; -- Ativa o reset
+			wait for 100 ns;
+			s_rst <= '0'; -- Desativa o reset
+			wait for 100 ns;
+
+			wait;
     end process;
 
 end architecture;
