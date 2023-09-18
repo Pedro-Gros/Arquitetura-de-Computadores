@@ -53,12 +53,12 @@ architecture a_Reg_tb of Reg_tb is
 			wait for 100 ns;
 
 			s_A3 <= "001"; 			   -- Seleciona o registrador 1
-			s_WD3 <= "1001011100010111"; -- Valor a ser escrito
+			s_WD3 <= "0001110000000100"; -- Valor a ser escrito
 			s_WE3 <= '1'; 			   -- Ativa a escrita
 			wait for 100 ns;
 
 			s_A3 <= "010"; 			   -- Seleciona o registrador 2
-			s_WD3 <= "0010001011110100"; -- Valor a ser escrito
+			s_WD3 <= "0000111001100111"; -- Valor a ser escrito
 			s_WE3 <= '1'; 			   -- Ativa a escrita
 			wait for 100 ns;
 

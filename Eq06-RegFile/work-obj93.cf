@@ -1,0 +1,10 @@
+v 4
+file . "Eq06-RegFile_tb.vhd" "ac403cee478c573db4d1258dcf9b8639c2fca07e" "20230918212305.325":
+  entity reg_tb at 12( 391) + 0 on 15;
+  architecture a_reg_tb of reg_tb at 19( 491) + 0 on 16;
+file . "Eq06-reg16bits.vhd" "09885acba63ac3354127484a2ddfae7699248400" "20230918212305.203":
+  entity register_comp at 12( 391) + 0 on 11;
+  architecture a_register_comp of register_comp at 26( 800) + 0 on 12;
+file . "Eq06-RegFile.vhd" "49c9c5a3362ce0e2c157fba85fd28ec14069e420" "20230918212305.267":
+  entity registersbank at 12( 391) + 0 on 13;
+  architecture a_registersbank of registersbank at 31( 1253) + 0 on 14;
