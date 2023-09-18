@@ -42,7 +42,7 @@ architecture a_RegistersBank of RegistersBank is
 
 	-- Sinais de saida dos registradores
 	signal out_0, out_1, out_2, out_3, out_4, out_5, out_6, out_7	: unsigned(15 downto 0);
-
+	-- Sinais de enable para cada registrador
 	signal s_WD3_0, s_WD3_1, s_WD3_2, s_WD3_3, s_WD3_4, s_WD3_5, s_WD3_6, s_WD3_7 : std_logic := '0';
 
 	begin
