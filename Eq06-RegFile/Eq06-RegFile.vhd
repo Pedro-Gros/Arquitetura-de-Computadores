@@ -40,32 +40,31 @@ architecture a_RegistersBank of RegistersBank is
 				);
 	end component register_comp;
 
-	-- Sinais de entrada dos registradores
-	signal in_0, in_1, in_2, in_3, in_4, in_5, in_6, in_7			: unsigned(15 downto 0);
 	-- Sinais de saida dos registradores
 	signal out_0, out_1, out_2, out_3, out_4, out_5, out_6, out_7	: unsigned(15 downto 0);
 
+	signal s_WD3_0, s_WD3_1, s_WD3_2, s_WD3_3, s_WD3_4, s_WD3_5, s_WD3_6, s_WD3_7 : std_logic := '0';
+
 	begin
 		-- Instanciando registrador 0
-		rg0: register_comp port map(in_0, out_0, CLK, rst, WE3);
+		rg0: register_comp port map(WD3, out_0, CLK, rst, s_WD3_0);
 		-- Instanciando registrador 1
-		rg1: register_comp port map(in_1, out_1, CLK, rst, WE3);
+		rg1: register_comp port map(WD3, out_1, CLK, rst, s_WD3_1);
 		-- Instanciando registrador 2
-		rg2: register_comp port map(in_2, out_2, CLK, rst, WE3);
+		rg2: register_comp port map(WD3, out_2, CLK, rst, s_WD3_2);
 		-- Instanciando registrador 3
-		rg3: register_comp port map(in_3, out_3, CLK, rst, WE3);
+		rg3: register_comp port map(WD3, out_3, CLK, rst, s_WD3_3);
 		-- Instanciando registrador 4
-		rg4: register_comp port map(in_4, out_4, CLK, rst, WE3);
+		rg4: register_comp port map(WD3, out_4, CLK, rst, s_WD3_4);
 		-- Instanciando registrador 5
-		rg5: register_comp port map(in_5, out_5, CLK, rst, WE3);
+		rg5: register_comp port map(WD3, out_5, CLK, rst, s_WD3_5);
 		-- Instanciando registrador 6
-		rg6: register_comp port map(in_6, out_6, CLK, rst, WE3);
+		rg6: register_comp port map(WD3, out_6, CLK, rst, s_WD3_6);
 		-- Instanciando registrador 7
-		rg7: register_comp port map(in_7, out_7, CLK, rst, WE3);
+		rg7: register_comp port map(WD3, out_7, CLK, rst, s_WD3_7);
 
 		-- Saida 1 recebe o valor do registrador selecionado por A1
-		RD1 <= 	out_0 when A1 = "000" else
-				out_1 when A1 = "001" else
+		RD1 <= 	out_1 when A1 = "001" else
 				out_2 when A1 = "010" else
 				out_3 when A1 = "011" else
 				out_4 when A1 = "100" else
@@ -75,8 +74,7 @@ architecture a_RegistersBank of RegistersBank is
 				"0000000000000000";
 
 		-- Saida 2 recebe o valor de saida do registrador selecionado por A2				
-		RD2 <= 	out_0 when A2 = "000" else
-				out_1 when A2 = "001" else
+		RD2 <=	out_1 when A2 = "001" else
 				out_2 when A2 = "010" else
 				out_3 when A2 = "011" else
 				out_4 when A2 = "100" else
@@ -85,31 +83,12 @@ architecture a_RegistersBank of RegistersBank is
 				out_7 when A2 = "111" else
 				"0000000000000000";
 
-		process(rst, WE3, A3)
-		begin
-			-- Caso a flag de reset esteja habilitada, reseta todos os registradores para 0(zero)!
-			if rst = '1' then
-				in_0 <= "0000000000000000";
-				in_1 <= "0000000000000000";
-				in_2 <= "0000000000000000";
-				in_3 <= "0000000000000000";
-				in_4 <= "0000000000000000";
-				in_5 <= "0000000000000000";
-				in_6 <= "0000000000000000";
-				in_7 <= "0000000000000000";
-			-- Os registradores são escritos caso a flag de rst não esteja habilitada, mas a flag de escrita esteja!
-			elsif WE3 = '1' then
-				-- Entrada WD3 é enviada para a entrada do registrador selecionado por A3
-				if 		A3 = "001" then in_1 <= WD3;
-				elsif 	A3 = "010" then in_2 <= WD3;
-				elsif 	A3 = "011" then in_3 <= WD3;
-				elsif 	A3 = "100" then in_4 <= WD3;
-				elsif 	A3 = "101" then in_5 <= WD3;
-				elsif 	A3 = "110" then in_6 <= WD3;
-				elsif 	A3 = "111" then in_7 <= WD3;
-				-- registrador 0 sempre possui o valor 0 (zero). Por esse motivo não é possivel modifica-lo!
-				else					in_0 <= "0000000000000000";
-				end if;
-			end if;
-		end process;
+		s_WD3_1 <= '1' when A3 = "001" and WD3 = '1';
+		s_WD3_2 <= '1' when A3 = "010" and WD3 = '1';
+		s_WD3_3 <= '1' when A3 = "011" and WD3 = '1';
+		s_WD3_4 <= '1' when A3 = "100" and WD3 = '1';
+		s_WD3_5 <= '1' when A3 = "101" and WD3 = '1';
+		s_WD3_6 <= '1' when A3 = "110" and WD3 = '1';
+		s_WD3_7 <= '1' when A3 = "111" and WD3 = '1';
+
 end architecture;
