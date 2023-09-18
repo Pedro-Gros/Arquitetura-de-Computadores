@@ -65,6 +65,9 @@ architecture a_Reg_tb of Reg_tb is
 			s_A1 <= "001"; 			   -- Seleciona o registrador 1
 			s_A2 <= "010"; 			   -- Seleciona o registrador 2
 			wait for 100 ns;
+			s_A1 <= "010"; 			   -- Seleciona o registrador 1
+			s_A2 <= "001"; 			   -- Seleciona o registrador 2
+			wait for 100 ns;
 			
 			s_rst <= '1'; -- Ativa o reset
 			wait for 100 ns;
