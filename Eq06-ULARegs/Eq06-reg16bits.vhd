@@ -3,7 +3,7 @@
 -- Data: 27/08/2023
 -- Disciplina: Arquitetura e Organização de Computadores
 
--- Laboratório 4 - Banco de registradores
+-- Laboratório 3 - Banco de registradores
 -- Membros:
 --         * Mateus Stupp
 --         * Pedro Henrique Gros
