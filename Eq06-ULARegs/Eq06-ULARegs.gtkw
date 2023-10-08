@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Oct 08 13:38:20 2023
+[*]
+[dumpfile] "D:\ArquiteturaComputadores\Arquitetura-de-Computadores\Eq06-ULARegs\Eq06-ULARegs.ghw"
+[dumpfile_mtime] "Sun Oct 08 13:34:01 2023"
+[dumpfile_size] 4296
+[savefile] "D:\ArquiteturaComputadores\Arquitetura-de-Computadores\Eq06-ULARegs\Eq06-ULARegs.gtkw"
+[timestart] 0
+[size] 1536 801
+[pos] -1 -1
+*-26.337997 313400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.ularegs_tb.
+[treeopen] top.ularegs_tb.uut.
+[sst_width] 197
+[signals_width] 226
+[sst_expanded] 1
+[sst_vpaned_height] 224
+@28
+top.ularegs_tb.uut.rst
+#{top.ularegs_tb.s_a1[2:0]} top.ularegs_tb.s_a1[2] top.ularegs_tb.s_a1[1] top.ularegs_tb.s_a1[0]
+#{top.ularegs_tb.s_a2[2:0]} top.ularegs_tb.s_a2[2] top.ularegs_tb.s_a2[1] top.ularegs_tb.s_a2[0]
+#{top.ularegs_tb.s_a3[2:0]} top.ularegs_tb.s_a3[2] top.ularegs_tb.s_a3[1] top.ularegs_tb.s_a3[0]
+@420
+#{top.ularegs_tb.s_in_ext[15:0]} top.ularegs_tb.s_in_ext[15] top.ularegs_tb.s_in_ext[14] top.ularegs_tb.s_in_ext[13] top.ularegs_tb.s_in_ext[12] top.ularegs_tb.s_in_ext[11] top.ularegs_tb.s_in_ext[10] top.ularegs_tb.s_in_ext[9] top.ularegs_tb.s_in_ext[8] top.ularegs_tb.s_in_ext[7] top.ularegs_tb.s_in_ext[6] top.ularegs_tb.s_in_ext[5] top.ularegs_tb.s_in_ext[4] top.ularegs_tb.s_in_ext[3] top.ularegs_tb.s_in_ext[2] top.ularegs_tb.s_in_ext[1] top.ularegs_tb.s_in_ext[0]
+@28
+top.ularegs_tb.uut.select_mux
+#{top.ularegs_tb.uut.op[2:0]} top.ularegs_tb.uut.op[2] top.ularegs_tb.uut.op[1] top.ularegs_tb.uut.op[0]
+@24
+#{top.ularegs_tb.uut.s_rd1[15:0]} top.ularegs_tb.uut.s_rd1[15] top.ularegs_tb.uut.s_rd1[14] top.ularegs_tb.uut.s_rd1[13] top.ularegs_tb.uut.s_rd1[12] top.ularegs_tb.uut.s_rd1[11] top.ularegs_tb.uut.s_rd1[10] top.ularegs_tb.uut.s_rd1[9] top.ularegs_tb.uut.s_rd1[8] top.ularegs_tb.uut.s_rd1[7] top.ularegs_tb.uut.s_rd1[6] top.ularegs_tb.uut.s_rd1[5] top.ularegs_tb.uut.s_rd1[4] top.ularegs_tb.uut.s_rd1[3] top.ularegs_tb.uut.s_rd1[2] top.ularegs_tb.uut.s_rd1[1] top.ularegs_tb.uut.s_rd1[0]
+#{top.ularegs_tb.uut.s_in_a[15:0]} top.ularegs_tb.uut.s_in_a[15] top.ularegs_tb.uut.s_in_a[14] top.ularegs_tb.uut.s_in_a[13] top.ularegs_tb.uut.s_in_a[12] top.ularegs_tb.uut.s_in_a[11] top.ularegs_tb.uut.s_in_a[10] top.ularegs_tb.uut.s_in_a[9] top.ularegs_tb.uut.s_in_a[8] top.ularegs_tb.uut.s_in_a[7] top.ularegs_tb.uut.s_in_a[6] top.ularegs_tb.uut.s_in_a[5] top.ularegs_tb.uut.s_in_a[4] top.ularegs_tb.uut.s_in_a[3] top.ularegs_tb.uut.s_in_a[2] top.ularegs_tb.uut.s_in_a[1] top.ularegs_tb.uut.s_in_a[0]
+#{top.ularegs_tb.uut.s_rd2[15:0]} top.ularegs_tb.uut.s_rd2[15] top.ularegs_tb.uut.s_rd2[14] top.ularegs_tb.uut.s_rd2[13] top.ularegs_tb.uut.s_rd2[12] top.ularegs_tb.uut.s_rd2[11] top.ularegs_tb.uut.s_rd2[10] top.ularegs_tb.uut.s_rd2[9] top.ularegs_tb.uut.s_rd2[8] top.ularegs_tb.uut.s_rd2[7] top.ularegs_tb.uut.s_rd2[6] top.ularegs_tb.uut.s_rd2[5] top.ularegs_tb.uut.s_rd2[4] top.ularegs_tb.uut.s_rd2[3] top.ularegs_tb.uut.s_rd2[2] top.ularegs_tb.uut.s_rd2[1] top.ularegs_tb.uut.s_rd2[0]
+#{top.ularegs_tb.uut.s_out_mux[15:0]} top.ularegs_tb.uut.s_out_mux[15] top.ularegs_tb.uut.s_out_mux[14] top.ularegs_tb.uut.s_out_mux[13] top.ularegs_tb.uut.s_out_mux[12] top.ularegs_tb.uut.s_out_mux[11] top.ularegs_tb.uut.s_out_mux[10] top.ularegs_tb.uut.s_out_mux[9] top.ularegs_tb.uut.s_out_mux[8] top.ularegs_tb.uut.s_out_mux[7] top.ularegs_tb.uut.s_out_mux[6] top.ularegs_tb.uut.s_out_mux[5] top.ularegs_tb.uut.s_out_mux[4] top.ularegs_tb.uut.s_out_mux[3] top.ularegs_tb.uut.s_out_mux[2] top.ularegs_tb.uut.s_out_mux[1] top.ularegs_tb.uut.s_out_mux[0]
+#{top.ularegs_tb.uut.s_in_b[15:0]} top.ularegs_tb.uut.s_in_b[15] top.ularegs_tb.uut.s_in_b[14] top.ularegs_tb.uut.s_in_b[13] top.ularegs_tb.uut.s_in_b[12] top.ularegs_tb.uut.s_in_b[11] top.ularegs_tb.uut.s_in_b[10] top.ularegs_tb.uut.s_in_b[9] top.ularegs_tb.uut.s_in_b[8] top.ularegs_tb.uut.s_in_b[7] top.ularegs_tb.uut.s_in_b[6] top.ularegs_tb.uut.s_in_b[5] top.ularegs_tb.uut.s_in_b[4] top.ularegs_tb.uut.s_in_b[3] top.ularegs_tb.uut.s_in_b[2] top.ularegs_tb.uut.s_in_b[1] top.ularegs_tb.uut.s_in_b[0]
+#{top.ularegs_tb.uut.s_out_ula[15:0]} top.ularegs_tb.uut.s_out_ula[15] top.ularegs_tb.uut.s_out_ula[14] top.ularegs_tb.uut.s_out_ula[13] top.ularegs_tb.uut.s_out_ula[12] top.ularegs_tb.uut.s_out_ula[11] top.ularegs_tb.uut.s_out_ula[10] top.ularegs_tb.uut.s_out_ula[9] top.ularegs_tb.uut.s_out_ula[8] top.ularegs_tb.uut.s_out_ula[7] top.ularegs_tb.uut.s_out_ula[6] top.ularegs_tb.uut.s_out_ula[5] top.ularegs_tb.uut.s_out_ula[4] top.ularegs_tb.uut.s_out_ula[3] top.ularegs_tb.uut.s_out_ula[2] top.ularegs_tb.uut.s_out_ula[1] top.ularegs_tb.uut.s_out_ula[0]
+@28
+#{top.ularegs_tb.s_flags[1:0]} top.ularegs_tb.s_flags[1] top.ularegs_tb.s_flags[0]
+[pattern_trace] 1
+[pattern_trace] 0
