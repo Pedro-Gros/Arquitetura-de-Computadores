@@ -29,10 +29,8 @@ begin
 	begin
 		if rst_maq = '1' then
 			estado <= '0';				-- Reset
-		else
-			if rising_edge(clk) then
-				estado <= not estado;	-- Troca de estado 
-			end if;
+		elsif rising_edge(clk) then
+			estado <= not estado;	-- Troca de estado
 		end if;
 	end process;
 
