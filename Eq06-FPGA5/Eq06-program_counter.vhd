@@ -13,30 +13,30 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity register_comp is
-port(	reg_in			: in  unsigned(15 downto 0); -- Entrada de Dados
-		reg_out    	    : out unsigned(15 downto 0); -- Saída de Dados
+entity program_counter is
+port(	data_in			: in  unsigned(15 downto 0); -- Entrada de Dados
+		data_out    	: out unsigned(15 downto 0); -- Saída de Dados
 		clk   	    	: in  std_logic;   			 -- Condicao
-		rst_reg			: in  std_logic;			 -- Flag
+		rst 			: in  std_logic;			 -- Flag
 		wr_en	    	: in  std_logic				 -- Write enable
 		);
-end entity register_comp;
+end entity program_counter;
 
 
-architecture a_register_comp of register_comp is
-	signal s_register: unsigned(15 downto 0);
+architecture a_program_counter of program_counter is
+	signal counter: unsigned(15 downto 0);
 begin
 
-	process(clk, rst_reg, wr_en)
+	process(clk, rst, wr_en)
 	begin
-		if rst_reg = '1' then
-			s_register <= "0000000000000000";
+		if rst = '1' then
+			counter <= "0000000000000000";
 		elsif wr_en = '1' then
 			if rising_edge(clk) then
-				s_register <= reg_in;
+				counter <= data_in;
 			end if;
 		end if;
 	end process;
 
-	reg_out <= s_register;
+	data_out <= counter;
 end architecture;

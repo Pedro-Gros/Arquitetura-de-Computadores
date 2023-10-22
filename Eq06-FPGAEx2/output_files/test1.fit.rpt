@@ -1,5 +1,5 @@
 Fitter report for test1
-Mon Oct 02 16:57:14 2023
+Sun Oct 22 11:13:20 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 02 16:57:14 2023       ;
+; Fitter Status                      ; Successful - Sun Oct 22 11:13:20 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; test1                                       ;
 ; Top-level Entity Name              ; MikroP                                      ;
@@ -148,7 +148,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.12        ;
@@ -156,8 +156,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.0%      ;
-;     Processors 3-4         ;   4.0%      ;
+;     Processor 2            ;   3.9%      ;
+;     Processors 3-4         ;   3.9%      ;
 +----------------------------+-------------+
 
 
@@ -199,7 +199,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/DAELN/Downloads/Eq06-FPGA2/output_files/test1.pin.
+The pin-out file can be found in D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/output_files/test1.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1729,45 +1729,45 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLK_H_HW~input (placed in PIN N14 (CLK2p, DIFFIO_RX_R38p, DIFFOUT_R38p, High_Speed)) File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 16
+Info (176353): Automatically promoted node CLK_H_HW~input (placed in PIN N14 (CLK2p, DIFFIO_RX_R38p, DIFFOUT_R38p, High_Speed)) File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 16
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G9
-Info (176353): Automatically promoted node ramDisp:RAMeDISP|clk_div  File: C:/Users/DAELN/Downloads/Eq06-FPGA2/RAMDisp.vhd Line: 40
+Info (176353): Automatically promoted node ramDisp:RAMeDISP|clk_div  File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/RAMDisp.vhd Line: 40
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X56_Y44 to location X66_Y54
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/DAELN/Downloads/Eq06-FPGA2/output_files/test1.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (144001): Generated suppressed messages file D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/output_files/test1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1448 megabytes
-    Info: Processing ended: Mon Oct 02 16:57:14 2023
+    Info: Peak virtual memory: 5646 megabytes
+    Info: Processing ended: Sun Oct 22 11:13:20 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/DAELN/Downloads/Eq06-FPGA2/output_files/test1.fit.smsg.
+The suppressed messages can be found in D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/output_files/test1.fit.smsg.
 
 

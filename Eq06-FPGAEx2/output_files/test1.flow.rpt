@@ -1,5 +1,5 @@
 Flow report for test1
-Mon Oct 02 16:57:23 2023
+Sun Oct 22 11:13:29 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 02 16:57:23 2023       ;
+; Flow Status                        ; Successful - Sun Oct 22 11:13:29 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; test1                                       ;
 ; Top-level Entity Name              ; MikroP                                      ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/02/2023 16:56:52 ;
+; Start date & time ; 10/22/2023 11:12:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test1               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 247207025561787.169627661204408        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 9447189933275.169798397607340          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -102,24 +102,24 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 668 MB              ; 00:00:22                           ;
-; Fitter               ; 00:00:10     ; 1.1                     ; 1448 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 547 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 670 MB              ; 00:00:03                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4802 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:10     ; 1.1                     ; 5646 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4685 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.3                     ; 4818 MB             ; 00:00:03                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DAELN-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter               ; DAELN-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler            ; DAELN-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Timing Analyzer      ; DAELN-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-RLV24TF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-RLV24TF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-RLV24TF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-RLV24TF  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

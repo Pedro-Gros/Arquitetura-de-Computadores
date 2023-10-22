@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Oct 16 22:54:40 2023
+[*]
+[dumpfile] "C:\Users\pedro.gros\Documents\Arquitetura de Computadores\Eq06-ROM_PC_UC\Eq06-ROM_PC_UC.ghw"
+[dumpfile_mtime] "Mon Oct 16 22:52:15 2023"
+[dumpfile_size] 1594
+[savefile] "C:\Users\pedro.gros\Documents\Arquitetura de Computadores\Eq06-ROM_PC_UC\Eq06-ROM_PC_UC.gtkw"
+[timestart] 0
+[size] 1280 657
+[pos] -113 -50
+*-28.307425 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_pc_uc_tb.
+[treeopen] top.rom_pc_uc_tb.uut.
+[sst_width] 197
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 173
+@28
+top.rom_pc_uc_tb.s_rst
+top.rom_pc_uc_tb.s_clk
+@24
+#{top.rom_pc_uc_tb.uut.s_addr_jump[5:0]} top.rom_pc_uc_tb.uut.s_addr_jump[5] top.rom_pc_uc_tb.uut.s_addr_jump[4] top.rom_pc_uc_tb.uut.s_addr_jump[3] top.rom_pc_uc_tb.uut.s_addr_jump[2] top.rom_pc_uc_tb.uut.s_addr_jump[1] top.rom_pc_uc_tb.uut.s_addr_jump[0]
+@28
+#{top.rom_pc_uc_tb.uut.s_dado_rom[7:0]} top.rom_pc_uc_tb.uut.s_dado_rom[7] top.rom_pc_uc_tb.uut.s_dado_rom[6] top.rom_pc_uc_tb.uut.s_dado_rom[5] top.rom_pc_uc_tb.uut.s_dado_rom[4] top.rom_pc_uc_tb.uut.s_dado_rom[3] top.rom_pc_uc_tb.uut.s_dado_rom[2] top.rom_pc_uc_tb.uut.s_dado_rom[1] top.rom_pc_uc_tb.uut.s_dado_rom[0]
+@24
+#{top.rom_pc_uc_tb.uut.pc_out[15:0]} top.rom_pc_uc_tb.uut.pc_out[15] top.rom_pc_uc_tb.uut.pc_out[14] top.rom_pc_uc_tb.uut.pc_out[13] top.rom_pc_uc_tb.uut.pc_out[12] top.rom_pc_uc_tb.uut.pc_out[11] top.rom_pc_uc_tb.uut.pc_out[10] top.rom_pc_uc_tb.uut.pc_out[9] top.rom_pc_uc_tb.uut.pc_out[8] top.rom_pc_uc_tb.uut.pc_out[7] top.rom_pc_uc_tb.uut.pc_out[6] top.rom_pc_uc_tb.uut.pc_out[5] top.rom_pc_uc_tb.uut.pc_out[4] top.rom_pc_uc_tb.uut.pc_out[3] top.rom_pc_uc_tb.uut.pc_out[2] top.rom_pc_uc_tb.uut.pc_out[1] top.rom_pc_uc_tb.uut.pc_out[0]
+[pattern_trace] 1
+[pattern_trace] 0
