@@ -87,7 +87,7 @@ architecture a_ram of ramDisp is
 		96 => "10010110",97 => "10010111",98 => "10011000",99 => "10011001",	others => (others=>'1')
 	);
 
-	signal contador: integer range 0 to 5000000 ; -- conta até 5M com o clock de 50 MHz, gera 10 Hz 
+	signal contador: integer range 0 to 100000000 ; -- conta até 5M com o clock de 50 MHz, gera 10 Hz 
 	
 ----------------- processo da ram com escrita síncrona	
 begin
@@ -114,7 +114,7 @@ begin
 			
 		elsif clk_h = '1' and clk_h'event then 
 			if halt = '0' then 
-				if contador >= 5000000 then --100000000 nao está funcionando
+				if contador >= 100000000 then
 					clk_div <= '1';
 					contador <= 0;
 				else
