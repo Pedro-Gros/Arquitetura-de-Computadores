@@ -39,8 +39,8 @@ architecture a_un_controle of un_controle is
   -- Instanciar a MAQ_ESTADOS
   maq_instance: maq_estados port map(s_estado_out, clk, rst);
 
-  wr_en <= '0' when s_estado_out = '0' else
-            '1';
+  wr_en <= '1' when s_estado_out = '1' else
+            '0';
 
    -- coloquei o opcode nos 3 bits MSB
    opcode <= dado_rom(7 downto 6);
