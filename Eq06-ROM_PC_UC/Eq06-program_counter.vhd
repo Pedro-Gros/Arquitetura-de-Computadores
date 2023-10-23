@@ -14,37 +14,29 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity program_counter is
-    port( 	data_out	: out unsigned(15 downto 0);    -- Valor do program counter
-            clk  		: in std_logic;                 -- Clock
-            rst			: in std_logic;		    	    -- Flag
-            wr_en   	: in std_logic                  -- Write enable (habilita a escrita)
-        );
-end entity;
+port(	data_in			: in  unsigned(15 downto 0); -- Entrada de Dados
+		data_out    	: out unsigned(15 downto 0); -- Saída de Dados
+		clk   	    	: in  std_logic;   			 -- Condicao
+		rst 			: in  std_logic;			 -- Flag
+		wr_en	    	: in  std_logic				 -- Write enable
+		);
+end entity program_counter;
+
 
 architecture a_program_counter of program_counter is
+	signal counter: unsigned(15 downto 0);
+begin
 
-    -- Declaração do componente registrador
-    component register_comp is
-        port(	reg_in			: in  unsigned(15 downto 0); -- Entrada de Dados
-                reg_out    	    : out unsigned(15 downto 0); -- Saída de Dados
-                clk   	    	: in  std_logic;   			 -- Condicao
-                rst_reg			: in  std_logic;			 -- Flag
-                wr_en	    	: in  std_logic				 -- Write enable
-            );
-    end component register_comp;
+	process(clk, rst, wr_en)
+	begin
+		if rst = '1' then
+			counter <= "0000000000000000";
+		elsif wr_en = '1' then
+			if rising_edge(clk) then
+				counter <= data_in;
+			end if;
+		end if;
+	end process;
 
-    -- Sinais de saida do program counter
-    signal pc_out       : unsigned(15 downto 0) := "0000000000000000";
-    -- Sinal de incremento do program counter
-    signal data_in      : unsigned(15 downto 0) := "0000000000000000";
-    -- Sinais de enable para o program counter
-	signal s_wr_en_pc   : std_logic := '0';
-
-    begin
-        -- Instanciando program counter
-		pc: register_comp port map(data_in, data_out, clk, rst, s_wr_en_pc);
-
-        -- Saida do PC e incrementada e ligada na entrada
-        data_in <= pc_out + 1;
-
+	data_out <= counter;
 end architecture;

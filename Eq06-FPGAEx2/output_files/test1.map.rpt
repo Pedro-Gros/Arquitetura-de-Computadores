@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test1
-Mon Oct 02 16:57:03 2023
+Sun Oct 22 11:13:09 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 02 16:57:03 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 22 11:13:09 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; test1                                       ;
 ; Top-level Entity Name              ; MikroP                                      ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -168,30 +168,29 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; Eq06-ULA.vhd                     ; yes             ; User VHDL File               ; C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd                           ;         ;
-; RAMDisp.vhd                      ; yes             ; User VHDL File               ; C:/Users/DAELN/Downloads/Eq06-FPGA2/RAMDisp.vhd                            ;         ;
-; MikroP.vhd                       ; yes             ; User VHDL File               ; C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd                             ;         ;
-; Hex.vhd                          ; yes             ; User VHDL File               ; C:/Users/DAELN/Downloads/Eq06-FPGA2/Hex.vhd                                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; db/lpm_divide_bvl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/DAELN/Downloads/Eq06-FPGA2/db/lpm_divide_bvl.tdf                  ;         ;
-; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/DAELN/Downloads/Eq06-FPGA2/db/sign_div_unsign_dnh.tdf             ;         ;
-; db/alt_u_div_4le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/DAELN/Downloads/Eq06-FPGA2/db/alt_u_div_4le.tdf                   ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/DAELN/Downloads/Eq06-FPGA2/db/add_sub_t3c.tdf                     ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/DAELN/Downloads/Eq06-FPGA2/db/add_sub_u3c.tdf                     ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; Eq06-ULA.vhd                     ; yes             ; User VHDL File               ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd               ;         ;
+; RAMDisp.vhd                      ; yes             ; User VHDL File               ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/RAMDisp.vhd                ;         ;
+; MikroP.vhd                       ; yes             ; User VHDL File               ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd                 ;         ;
+; Hex.vhd                          ; yes             ; User VHDL File               ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Hex.vhd                    ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf                                      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/abs_divider.inc                                     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc                                 ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/aglobal181.inc                                      ;         ;
+; db/lpm_divide_bvl.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/lpm_divide_bvl.tdf      ;         ;
+; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/sign_div_unsign_dnh.tdf ;         ;
+; db/alt_u_div_4le.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/alt_u_div_4le.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/add_sub_u3c.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -362,73 +361,73 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 02 16:56:51 2023
+    Info: Processing started: Sun Oct 22 11:12:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGAEx2-rev2 -c test1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file eq06-ula.vhd
-    Info (12022): Found design unit 1: ULA-a_ULA File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd Line: 26
-    Info (12023): Found entity 1: ULA File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd Line: 16
+    Info (12022): Found design unit 1: ULA-a_ULA File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd Line: 26
+    Info (12023): Found entity 1: ULA File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file ramdisp.vhd
-    Info (12022): Found design unit 1: ramDisp-a_ram File: C:/Users/DAELN/Downloads/Eq06-FPGA2/RAMDisp.vhd Line: 45
-    Info (12023): Found entity 1: ramDisp File: C:/Users/DAELN/Downloads/Eq06-FPGA2/RAMDisp.vhd Line: 19
+    Info (12022): Found design unit 1: ramDisp-a_ram File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/RAMDisp.vhd Line: 45
+    Info (12023): Found entity 1: ramDisp File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/RAMDisp.vhd Line: 19
 Info (12021): Found 2 design units, including 1 entities, in source file mikrop.vhd
-    Info (12022): Found design unit 1: MikroP-LogicFunction File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 37
-    Info (12023): Found entity 1: MikroP File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 13
+    Info (12022): Found design unit 1: MikroP-LogicFunction File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 37
+    Info (12023): Found entity 1: MikroP File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file hex.vhd
-    Info (12022): Found design unit 1: hex_7seg-Behavior File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Hex.vhd Line: 19
-    Info (12023): Found entity 1: hex_7seg File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Hex.vhd Line: 12
+    Info (12022): Found design unit 1: hex_7seg-Behavior File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Hex.vhd Line: 19
+    Info (12023): Found entity 1: hex_7seg File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Hex.vhd Line: 12
 Info (12127): Elaborating entity "MikroP" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MikroP.vhd(78): object "ram_out" assigned a value but never read File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 78
-Info (12128): Elaborating entity "ramDisp" for hierarchy "ramDisp:RAMeDISP" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 92
-Info (12128): Elaborating entity "hex_7seg" for hierarchy "ramDisp:RAMeDISP|hex_7seg:H0" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/RAMDisp.vhd Line: 148
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_Comp" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 114
+Warning (10036): Verilog HDL or VHDL warning at MikroP.vhd(78): object "ram_out" assigned a value but never read File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 78
+Info (12128): Elaborating entity "ramDisp" for hierarchy "ramDisp:RAMeDISP" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 92
+Info (12128): Elaborating entity "hex_7seg" for hierarchy "ramDisp:RAMeDISP|hex_7seg:H0" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/RAMDisp.vhd Line: 148
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_Comp" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 114
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ULA:ULA_Comp|Div0" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd Line: 34
-Info (12130): Elaborated megafunction instantiation "ULA:ULA_Comp|lpm_divide:Div0" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd Line: 34
-Info (12133): Instantiated megafunction "ULA:ULA_Comp|lpm_divide:Div0" with the following parameter: File: C:/Users/DAELN/Downloads/Eq06-FPGA2/Eq06-ULA.vhd Line: 34
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ULA:ULA_Comp|Div0" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd Line: 34
+Info (12130): Elaborated megafunction instantiation "ULA:ULA_Comp|lpm_divide:Div0" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd Line: 34
+Info (12133): Instantiated megafunction "ULA:ULA_Comp|lpm_divide:Div0" with the following parameter: File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/Eq06-ULA.vhd Line: 34
     Info (12134): Parameter "LPM_WIDTHN" = "16"
     Info (12134): Parameter "LPM_WIDTHD" = "16"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bvl.tdf
-    Info (12023): Found entity 1: lpm_divide_bvl File: C:/Users/DAELN/Downloads/Eq06-FPGA2/db/lpm_divide_bvl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_bvl File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/lpm_divide_bvl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/DAELN/Downloads/Eq06-FPGA2/db/sign_div_unsign_dnh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/sign_div_unsign_dnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4le.tdf
-    Info (12023): Found entity 1: alt_u_div_4le File: C:/Users/DAELN/Downloads/Eq06-FPGA2/db/alt_u_div_4le.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_4le File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/alt_u_div_4le.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/DAELN/Downloads/Eq06-FPGA2/db/add_sub_t3c.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_t3c File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/add_sub_t3c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/DAELN/Downloads/Eq06-FPGA2/db/add_sub_u3c.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_u3c File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/db/add_sub_u3c.tdf Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX2_HW[0]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[1]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[2]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[3]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[4]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[5]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX2_HW[6]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 29
-    Warning (13410): Pin "HEX3_HW[0]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[1]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[2]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[3]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[4]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[5]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
-    Warning (13410): Pin "HEX3_HW[6]" is stuck at VCC File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX2_HW[0]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[1]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[2]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[3]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[4]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[5]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX2_HW[6]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 29
+    Warning (13410): Pin "HEX3_HW[0]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[1]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[2]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[3]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[4]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[5]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
+    Warning (13410): Pin "HEX3_HW[6]" is stuck at VCC File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY1_HW" File: C:/Users/DAELN/Downloads/Eq06-FPGA2/MikroP.vhd Line: 21
+    Warning (15610): No output dependent on input pin "KEY1_HW" File: D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/MikroP.vhd Line: 21
 Info (21057): Implemented 521 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 456 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 668 megabytes
-    Info: Processing ended: Mon Oct 02 16:57:03 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Sun Oct 22 11:13:09 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
 
 

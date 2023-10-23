@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("C:/Users/DAELN/Downloads/Eq06-FPGA2/output_files/") File("test1.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("D:/ArquiteturaComputadores/Arquitetura-de-Computadores/Eq06-FPGAEx2/output_files/") File("test1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
