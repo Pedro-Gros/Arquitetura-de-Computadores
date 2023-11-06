@@ -46,41 +46,46 @@ architecture a_un_controle of un_controle is
        );
    end component ULARegs;
 
-  signal s_estado : unsigned (1 downto 0);
+  signal sSelect_MUX, s_wr_en: std_logic;
+  signal s_estado, s_flags : unsigned (1 downto 0);
   signal opcode: unsigned(6 downto 0);
+  signal sRegA, sRegB, sRegC, sOp_Sel: unsigned (2 downto 0);
+  signal sConst: unsigned(15 downto 0);
 
   begin
   -- Instanciar a MAQ_ESTADOS
   maq_instance: maq_estados port map(s_estado, clk, rst);
-  ULARegs_instance: ULARegs port map(RegC, RegB, RegA, wr_en, clk, rst, op_sel, s_flags, const, select_MUX);
+  ULARegs_instance: ULARegs port map(sRegC, sRegA, sRegB, s_wr_en, clk, rst, sOp_Sel, s_flags, sConst, sSelect_MUX);
 
-  wr_en <= '1' when s_estado = "10" else
+  s_wr_en <= '1' when s_estado = "10" else
            '0';
 
    -- coloquei o opcode nos 7 bits MSB
    opcode <= dado_rom(31 downto 25);
    
-   RegA <= dado_rom(24 downto 22);
+   sRegA <= dado_rom(24 downto 22);
    
-   RegB <= dado_rom(21 downto 19);
+   sRegB <= dado_rom(21 downto 19);
 
-   RegC <= dado_rom(18 downto 16);
+   sRegC <= dado_rom(18 downto 16);
 
-   const <= dado_rom(15 downto 0);
+   sConst <= dado_rom(15 downto 0);
   
-   select_MUX <= '1' when opcode = "0000100" else -- Addi
-                   '1' when opcode - "0000111" else -- Subi
-                   '0'
+   sSelect_MUX <= '1' when opcode = "0000100" else -- Addi
+                  '1' when opcode = "0000111" else -- Subi
+                  '0';
 
    -- meu jump: opcode 1111111
    jump_en <= '1' when opcode="1111111" else
               '0';
 
-   op_sel <=  "000" when opcode = "0000000" else -- Add
+   sOp_Sel <= "000" when opcode = "0000000" else -- Add
               "000" when opcode = "0000100" else -- Addi
               "001" when opcode = "0000010" else -- Div
-              "110" when opcode - "0000011" else -- Sub
-              "110" when opcode - "0000111" else -- Subi
-              "111"
+              "110" when opcode = "0000011" else -- Sub
+              "110" when opcode = "0000111" else -- Subi
+              "111";
+
+  wr_en <= s_wr_en;
 
 end architecture;
