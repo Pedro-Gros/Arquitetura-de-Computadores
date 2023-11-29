@@ -3,9 +3,8 @@
 -- Data: 27/08/2023
 -- Disciplina: Arquitetura e Organização de Computadores
 
--- Laboratório 4 - ULA + Banco de registradores
+-- Laboratório 6 - Calculadora
 -- Membros:
---         * Mateus Stupp
 --         * Pedro Henrique Gros
 --         * Pedro Henrique Grossi da Silva
 --------------------------------------------------------------

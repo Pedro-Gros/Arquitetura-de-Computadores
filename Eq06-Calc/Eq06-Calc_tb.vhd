@@ -3,9 +3,8 @@
 -- Data: 27/08/2023
 -- Disciplina: Arquitetura e Organização de Computadores
 
--- Laboratório 5 - Unidade de Controle
+-- Laboratório 6 - Calculadora
 -- Membros:
---         * Mateus Stupp
 --         * Pedro Henrique Gros
 --         * Pedro Henrique Grossi da Silva
 --------------------------------------------------------------
@@ -13,24 +12,24 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity ROM_PC_UC_tb is
+entity CALC_tb is
   
 end entity;
 
-architecture a_ROM_PC_UC_tb of ROM_PC_UC_tb is
+architecture a_CALC_tb of CALC_tb is
 
 component ROM_PC_UC is
     port(   clk : in std_logic;
             rst : in std_logic;
             addr: out unsigned(15 downto 0);
-            data: out unsigned(7 downto 0)
+            data: out unsigned(31 downto 0)
         );
  end component;
 
   signal s_clk            : std_logic                 := '0';
   signal s_rst            : std_logic                 := '0';
   signal s_addr           : unsigned(15 downto 0)     := "0000000000000000";
-  signal s_data           : unsigned(7 downto 0)      := "00000000";
+  signal s_data           : unsigned(31 downto 0)     := "00000000000000000000000000000000";
 
 begin
   uut: ROM_PC_UC port map (s_clk, s_rst, s_addr, s_data);
